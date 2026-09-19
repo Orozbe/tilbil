@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Угуу — TilBil</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo">🇰🇬 TilBil</div>
+
+    <nav class="nav">
+        <a href="index.html">Башкы бет</a>
+        <a href="lessons.html">📖 Сабактар</a>
+        <a href="games.html">🎮 Оюндар</a>
+        <a href="tests.html">📝 Тесттер</a>
+        <a href="listening.html" class="active">🔊 Угуу</a>
+        <a href="dictionary.html">📕 Сөздүк</a>
+    </nav>
+</header>
+
+
+<main class="container">
+
+    <!-- БАШТАЛГЫЧ БӨЛҮМ -->
+    <section id="listeningStart" class="hero-section">
+
+        <h1>🔊 Угуу</h1>
+
+        <h2>Кыргыз тилин угуп үйрөн!</h2>
+
+        <p>
+            Сөздөрдү жана сүйлөмдөрдү ук.
+            Андан кийин туура жоопту танда.
+        </p>
+
+        <div class="info-box">
+            🎧 Бардыгы: <strong>10 тапшырма</strong>
+            <br>
+            ⭐ Ар бир туура жооп: <strong>10 упай</strong>
+        </div>
+
+        <button onclick="startListening()">
+            ▶️ Угууну баштоо
+        </button>
+
+    </section>
+
+
+    <!-- НЕГИЗГИ УГУУ БӨЛҮМҮ -->
+    <section id="listeningArea" style="display:none;">
+
+        <div class="progress-info">
+
+            <span id="listeningQuestionNumber">
+                1 / 10
+            </span>
+
+            <span>
+                ⭐ Упай: <strong id="listeningScore">0</strong>
+            </span>
+
+        </div>
+
+
+        <div class="progress-bar">
+
+            <div
+                id="listeningProgress"
+                class="progress"
+                style="width:10%;">
+            </div>
+
+        </div>
+
+
+        <!-- ТАПШЫРМАНЫН ТҮРҮ -->
+        <div class="lesson-card">
+
+            <div id="listeningType" class="task-type">
+                🎧 Сөздү ук
+            </div>
+
+
+            <!-- АУДИО БӨТӨН -->
+            <div class="audio-box">
+
+                <div class="audio-icon">
+                    🔊
+                </div>
+
+                <button
+                    id="playListeningButton"
+                    onclick="playListeningText()">
+
+                    ▶️ Угуу
+
+                </button>
+
+            </div>
+
+
+            <p id="listeningHint">
+                Сөздү кунт коюп ук.
+            </p>
+
+
+            <!-- СУРОО -->
+            <h2 id="listeningQuestion">
+                Бул кайсы сөз?
+            </h2>
+
+
+            <!-- ЖООПТОР -->
+            <div id="listeningAnswers" class="answers"></div>
+
+
+            <!-- КИЙИНКИ -->
+            <button
+                id="nextListeningButton"
+                onclick="nextListeningQuestion()"
+                style="display:none;">
+
+                ➡️ Кийинки
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ЖЫЙЫНТЫК -->
+    <section
+        id="listeningResult"
+        class="result-section"
+        style="display:none;">
+
+        <h1>🎉 Угуу аяктады!</h1>
+
+        <div class="result-card">
+
+            <h2>
+                ⭐ Упай:
+                <span id="finalListeningScore">
+                    0
+                </span>
+            </h2>
+
+            <h3>
+                ✅ Туура жооп:
+                <span id="listeningCorrectCount">
+                    0
+                </span>
+                / 10
+            </h3>
+
+            <p id="listeningResultMessage">
+                Азамат!
+            </p>
+
+        </div>
+
+
+        <button onclick="restartListening()">
+            🔄 Кайра баштоо
+        </button>
+
+        <button onclick="go('index.html')">
+            🏠 Башкы бет
+        </button>
+
+    </section>
+
+</main>
+
+
+<script src="js/firebase-config.js"></script>
+<script src="js/app.js"></script>
+<script src="js/listening.js"></script>
+
+</body>
+</html>

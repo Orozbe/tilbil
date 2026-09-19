@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Сөздүк — TilBil</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+        🇰🇬 TilBil
+    </div>
+
+    <nav class="nav">
+        <a href="index.html">Башкы бет</a>
+        <a href="lessons.html">📖 Сабактар</a>
+        <a href="games.html">🎮 Оюндар</a>
+        <a href="tests.html">📝 Тесттер</a>
+        <a href="listening.html">🔊 Угуу</a>
+        <a href="dictionary.html" class="active">📕 Сөздүк</a>
+    </nav>
+
+</header>
+
+
+<main class="container">
+
+    <!-- БАШКЫ БӨЛҮК -->
+
+    <section class="hero-section">
+
+        <h1>📕 Кыргызча сөздүк</h1>
+
+        <h2>Жаңы сөздөрдү үйрөн!</h2>
+
+        <p>
+            Кыргызча сөздү изде,
+            маанисин бил жана туура айтылышын ук.
+        </p>
+
+    </section>
+
+
+    <!-- ИЗДӨӨ -->
+
+    <section class="lesson-card">
+
+        <h2>🔎 Сөз издөө</h2>
+
+        <input
+            type="text"
+            id="dictionarySearch"
+            placeholder="Мисалы: мектеп, китеп, үй..."
+            autocomplete="off"
+        >
+
+        <button onclick="searchDictionary()">
+            🔍 Издөө
+        </button>
+
+        <button onclick="showAllWords()">
+            📚 Бардык сөздөр
+        </button>
+
+    </section>
+
+
+    <!-- КАТЕГОРИЯЛАР -->
+
+    <section class="lesson-card">
+
+        <h2>📂 Категориялар</h2>
+
+        <div class="category-buttons">
+
+            <button onclick="filterCategory('all')">
+                📚 Баары
+            </button>
+
+            <button onclick="filterCategory('family')">
+                👨‍👩‍👧 Үй-бүлө
+            </button>
+
+            <button onclick="filterCategory('school')">
+                🏫 Мектеп
+            </button>
+
+            <button onclick="filterCategory('home')">
+                🏠 Үй
+            </button>
+
+            <button onclick="filterCategory('nature')">
+                🌳 Жаратылыш
+            </button>
+
+            <button onclick="filterCategory('food')">
+                🍎 Тамак-аш
+            </button>
+
+            <button onclick="filterCategory('daily')">
+                💬 Күнүмдүк сөздөр
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- СӨЗДӨР -->
+
+    <section id="dictionaryWords" class="dictionary-grid">
+
+        <!-- Сөздөр JavaScript аркылуу чыгат -->
+
+    </section>
+
+
+    <!-- СӨЗ ТАБЫЛБАГАНДА -->
+
+    <section
+        id="noDictionaryResult"
+        class="lesson-card"
+        style="display:none;">
+
+        <h2>😕 Сөз табылган жок</h2>
+
+        <p>
+            Башка сөз жазып көр.
+        </p>
+
+    </section>
+
+</main>
+
+
+<script src="js/firebase-config.js"></script>
+<script src="js/app.js"></script>
+<script src="js/dictionary.js"></script>
+
+</body>
+</html>

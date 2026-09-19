@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>5-сабак — Тамак-аш | TilBil</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo" onclick="location.href='index.html'">
+        🇰🇬 TilBil
+    </div>
+
+    <nav class="nav">
+        <a href="index.html">Башкы бет</a>
+        <a href="lessons.html">Сабактар</a>
+        <a href="games.html">Оюндар</a>
+        <a href="tests.html">Тесттер</a>
+        <a href="dictionary.html">Сөздүк</a>
+    </nav>
+
+</header>
+
+
+<main class="lesson-page">
+
+    <!-- САБАКТЫН БАШЫ -->
+
+    <section class="lesson-hero">
+
+        <div class="lesson-number">
+            5-САБАК
+        </div>
+
+        <h1>🍎 Тамак-аш</h1>
+
+        <p>
+            Тамак-ашка байланыштуу жаңы сөздөрдү үйрөнөбүз
+            жана аларды сүйлөмдөрдө колдонобуз.
+        </p>
+
+    </section>
+
+
+    <!-- ПРОГРЕСС -->
+
+    <section class="lesson-progress">
+
+        <div class="progress-info">
+
+            <span>Сабактын жүрүшү</span>
+
+            <span id="progressText">
+                1 / 4
+            </span>
+
+        </div>
+
+        <div class="progress-bar">
+
+            <div id="progressFill"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- 1-КАДАМ -->
+
+    <section class="lesson-step active" id="step1">
+
+        <div class="step-title">
+
+            <span>🍎</span>
+
+            <h2>1. Тамак-аш сөздөрү</h2>
+
+        </div>
+
+        <p>
+            Төмөнкү сөздөрдү окуп, жаттап көр.
+        </p>
+
+
+        <div class="word-grid">
+
+
+            <div class="word-card">
+
+                <div class="word-icon">🍎</div>
+
+                <h3>Алма</h3>
+
+                <p>Мөмө-жемиш</p>
+
+            </div>
+
+
+            <div class="word-card">
+
+                <div class="word-icon">🍞</div>
+
+                <h3>Нан</h3>
+
+                <p>Негизги азык</p>
+
+            </div>
+
+
+            <div class="word-card">
+
+                <div class="word-icon">🥛</div>
+
+                <h3>Сүт</h3>
+
+                <p>Суюк азык</p>
+
+            </div>
+
+
+            <div class="word-card">
+
+                <div class="word-icon">🍚</div>
+
+                <h3>Күрүч</h3>
+
+                <p>Дан азыгы</p>
+
+            </div>
+
+
+            <div class="word-card">
+
+                <div class="word-icon">🥩</div>
+
+                <h3>Эт</h3>
+
+                <p>Азык-түлүк</p>
+
+            </div>
+
+
+            <div class="word-card">
+
+                <div class="word-icon">🍲</div>
+
+                <h3>Шорпо</h3>
+
+                <p>Суюк тамак</p>
+
+            </div>
+
+
+            <div class="word-card">
+
+                <div class="word-icon">🥔</div>
+
+                <h3>Картошка</h3>
+
+                <p>Жашылча</p>
+
+            </div>
+
+
+            <div class="word-card">
+
+                <div class="word-icon">🥕</div>
+
+                <h3>Сабиз</h3>
+
+                <p>Жашылча</p>
+
+            </div>
+
+
+        </div>
+
+
+        <button
+            class="lesson-button"
+            onclick="nextStep()">
+
+            Кийинки →
+
+        </button>
+
+    </section>
+
+
+    <!-- 2-КАДАМ -->
+
+    <section class="lesson-step" id="step2">
+
+        <div class="step-title">
+
+            <span>💬</span>
+
+            <h2>2. Тамак-аш жөнүндө сүйлөмдөр</h2>
+
+        </div>
+
+        <p>
+            Жаңы сөздөрдү сүйлөмдөрдө колдонуп көрөлү.
+        </p>
+
+
+        <div class="sentence-list">
+
+
+            <div class="sentence-card">
+                🍎 <strong>Мен алма жейм.</strong>
+            </div>
+
+
+            <div class="sentence-card">
+                🍞 <strong>Мен нан жедим.</strong>
+            </div>
+
+
+            <div class="sentence-card">
+                🥛 <strong>Мен сүт ичем.</strong>
+            </div>
+
+
+            <div class="sentence-card">
+                🍲 <strong>Апам шорпо жасады.</strong>
+            </div>
+
+
+            <div class="sentence-card">
+                🥩 <strong>Атам эт жейт.</strong>
+            </div>
+
+
+            <div class="sentence-card">
+                🥕 <strong>Сабиз пайдалуу.</strong>
+            </div>
+
+
+        </div>
+
+
+        <div class="example-dialogue">
+
+            <h3>🗣️ Кыска сүйлөшүү</h3>
+
+            <p>
+                <strong>— Сен эмне жейсиң?</strong>
+            </p>
+
+            <p>
+                — Мен алма жейм.
+            </p>
+
+            <p>
+                <strong>— Сен эмне ичесиң?</strong>
+            </p>
+
+            <p>
+                — Мен сүт ичем.
+            </p>
+
+        </div>
+
+
+        <button
+            class="lesson-button"
+            onclick="nextStep()">
+
+            Кийинки →
+
+        </button>
+
+    </section>
+
+
+    <!-- 3-КАДАМ -->
+
+    <section class="lesson-step" id="step3">
+
+        <div class="step-title">
+
+            <span>📝</span>
+
+            <h2>3. Өзүңдү текшер</h2>
+
+        </div>
+
+        <p>
+            Туура жоопту танда.
+        </p>
+
+
+        <div id="quizContainer">
+
+        </div>
+
+
+        <div id="quizResult">
+
+        </div>
+
+
+        <button
+            id="nextQuestionButton"
+            class="lesson-button"
+            onclick="nextQuestion()"
+            style="display:none;">
+
+            Кийинки суроо →
+
+        </button>
+
+    </section>
+
+
+    <!-- 4-КАДАМ -->
+
+    <section class="lesson-step" id="step4">
+
+        <div class="result-box">
+
+            <div class="result-icon">
+                🎉
+            </div>
+
+
+            <h2>
+                Сабак аяктады!
+            </h2>
+
+
+            <p>
+                Сен «Тамак-аш» темасын өттүң.
+            </p>
+
+
+            <div class="lesson-score">
+
+
+                <div>
+
+                    <span>⭐</span>
+
+                    <strong id="finalScore">
+                        0
+                    </strong>
+
+                    <small>
+                        упай
+                    </small>
+
+                </div>
+
+
+                <div>
+
+                    <span>✅</span>
+
+                    <strong id="correctAnswers">
+                        0
+                    </strong>
+
+                    <small>
+                        туура жооп
+                    </small>
+
+                </div>
+
+
+            </div>
+
+
+            <div
+                class="result-message"
+                id="resultMessage">
+
+                Жакшы иштедиң! 👏
+
+            </div>
+
+
+            <div class="result-buttons">
+
+
+                <button
+                    class="lesson-button"
+                    onclick="location.href='lessons.html'">
+
+                    📚 Сабактарга кайтуу
+
+                </button>
+
+
+                <button
+                    class="lesson-button secondary"
+                    onclick="restartLesson()">
+
+                    🔄 Кайра өтүү
+
+                </button>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="js/firebase-config.js"></script>
+<script src="js/app.js"></script>
+<script src="js/lesson5.js"></script>
+
+</body>
+</html>

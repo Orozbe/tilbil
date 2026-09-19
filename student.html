@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Жеке кабинет — TilBil</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+        🇰🇬 TilBil
+    </div>
+
+    <nav class="nav">
+
+        <a href="index.html">🏠 Башкы бет</a>
+        <a href="lessons.html">📖 Сабактар</a>
+        <a href="games.html">🎮 Оюндар</a>
+        <a href="tests.html">📝 Тесттер</a>
+        <a href="listening.html">🔊 Угуу</a>
+        <a href="dictionary.html">📕 Сөздүк</a>
+        <a href="student.html" class="active">👤 Кабинет</a>
+
+    </nav>
+
+</header>
+
+
+<main class="container">
+
+    <!-- ПРОФИЛЬ -->
+
+    <section class="hero-section">
+
+        <div class="profile-icon">
+            👤
+        </div>
+
+        <h1 id="studentName">
+            TilBil окуучусу
+        </h1>
+
+        <p>
+            🇰🇬 Кыргыз тилин үйрөнүүчү
+        </p>
+
+        <div class="level-badge">
+            🏆 Деңгээл:
+            <strong id="profileLevel">1</strong>
+        </div>
+
+    </section>
+
+
+    <!-- НЕГИЗГИ СТАТИСТИКА -->
+
+    <section class="lesson-card">
+
+        <h2>📊 Менин статистикам</h2>
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+
+                <div class="stat-icon">⭐</div>
+
+                <h3 id="profileScore">
+                    0
+                </h3>
+
+                <p>
+                    Жалпы упай
+                </p>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">📖</div>
+
+                <h3 id="profileLessons">
+                    0
+                </h3>
+
+                <p>
+                    Бүткөн сабак
+                </p>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">🎮</div>
+
+                <h3 id="profileGames">
+                    0
+                </h3>
+
+                <p>
+                    Оюн упайы
+                </p>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">🔥</div>
+
+                <h3 id="profileStreak">
+                    7
+                </h3>
+
+                <p>
+                    Күндүк серия
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ДЕҢГЭЭЛ -->
+
+    <section class="lesson-card">
+
+        <h2>
+            🏆 Деңгээлдин прогресси
+        </h2>
+
+        <div class="level-box">
+
+            <div class="level-info">
+
+                <strong>
+                    Деңгээл
+                    <span id="currentLevel">
+                        1
+                    </span>
+                </strong>
+
+                <span>
+                    <span id="currentLevelScore">
+                        0
+                    </span>
+                    / 100
+                </span>
+
+            </div>
+
+
+            <div class="progress-bar">
+
+                <div
+                    id="profileProgress"
+                    class="progress"
+                    style="width:0%;">
+                </div>
+
+            </div>
+
+
+            <p id="profileLevelMessage">
+                Кийинки деңгээлге жетүү үчүн упай топто!
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- САБАКТАРДЫН ПРОГРЕССИ -->
+
+    <section class="lesson-card">
+
+        <h2>
+            📖 Сабактардын прогресси
+        </h2>
+
+        <div id="lessonProgressList">
+
+            <!-- JavaScript чыгарат -->
+
+        </div>
+
+    </section>
+
+
+    <!-- ЖЕТИШКЕНДИКТЕР -->
+
+    <section class="lesson-card">
+
+        <h2>
+            🏅 Жетишкендиктер
+        </h2>
+
+        <div class="achievements-grid">
+
+            <div
+                id="achievementFirstLesson"
+                class="achievement-card">
+
+                📖
+                <h3>Биринчи сабак</h3>
+
+                <p>
+                    Биринчи сабакты бүтүр
+                </p>
+
+            </div>
+
+
+            <div
+                id="achievementFiveLessons"
+                class="achievement-card">
+
+                🏆
+                <h3>5 сабак</h3>
+
+                <p>
+                    5 сабакты бүтүр
+                </p>
+
+            </div>
+
+
+            <div
+                id="achievementGame"
+                class="achievement-card">
+
+                🎮
+                <h3>Оюнчу</h3>
+
+                <p>
+                    Биринчи оюнду ойно
+                </p>
+
+            </div>
+
+
+            <div
+                id="achievementTest"
+                class="achievement-card">
+
+                📝
+                <h3>Билим текшерилди</h3>
+
+                <p>
+                    Тест тапшыр
+                </p>
+
+            </div>
+
+
+            <div
+                id="achievementListening"
+                class="achievement-card">
+
+                🔊
+                <h3>Угуучу</h3>
+
+                <p>
+                    Угуу тапшырмасын аткар
+                </p>
+
+            </div>
+
+
+            <div
+                id="achievement100"
+                class="achievement-card">
+
+                ⭐
+                <h3>100 упай</h3>
+
+                <p>
+                    100 упай топто
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- БӨЛҮМДӨР -->
+
+    <section class="lesson-card">
+
+        <h2>
+            🚀 Окууну улантуу
+        </h2>
+
+        <div class="menu-grid">
+
+            <div class="menu-card">
+
+                <div class="menu-icon">
+                    📖
+                </div>
+
+                <h2>Сабактар</h2>
+
+                <p>
+                    Кыргыз тилин үйрөнүүнү улант.
+                </p>
+
+                <button onclick="go('lessons.html')">
+                    Сабактар →
+                </button>
+
+            </div>
+
+
+            <div class="menu-card">
+
+                <div class="menu-icon">
+                    🎮
+                </div>
+
+                <h2>Оюндар</h2>
+
+                <p>
+                    Оюн ойноп упай топто.
+                </p>
+
+                <button onclick="go('games.html')">
+                    Оюндар →
+                </button>
+
+            </div>
+
+
+            <div class="menu-card">
+
+                <div class="menu-icon">
+                    📝
+                </div>
+
+                <h2>Тесттер</h2>
+
+                <p>
+                    Билимиңди текшер.
+                </p>
+
+                <button onclick="go('tests.html')">
+                    Тест →
+                </button>
+
+            </div>
+
+
+            <div class="menu-card">
+
+                <div class="menu-icon">
+                    🔊
+                </div>
+
+                <h2>Угуу</h2>
+
+                <p>
+                    Угуп түшүнүү жөндөмүңдү өнүктүр.
+                </p>
+
+                <button onclick="go('listening.html')">
+                    Угуу →
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- АТЫ-ЖӨНҮН КИЙИН КОШОБУЗ -->
+
+    <section class="lesson-card">
+
+        <h2>
+            ⚙️ Профиль
+        </h2>
+
+        <p>
+            Азырынча сенин маалыматың браузерде сакталат.
+            Кийинки этапта Firebase кошулганда аккаунт аркылуу
+            бардык маалыматтар булутта сакталат.
+        </p>
+
+        <button onclick="go('index.html')">
+            🏠 Башкы бетке кайтуу
+        </button>
+
+    </section>
+
+</main>
+
+
+<footer class="footer">
+
+    <p>
+        🇰🇬 TilBil — Кыргыз тилин үйрөнүү платформасы
+    </p>
+
+</footer>
+
+
+<script src="js/firebase-config.js"></script>
+<script src="js/app.js"></script>
+<script src="js/student.js"></script>
+
+</body>
+</html>

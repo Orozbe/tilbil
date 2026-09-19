@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4-сабак — Үй жана күнүмдүк жашоо | TilBil</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo" onclick="location.href='index.html'">
+        🇰🇬 TilBil
+    </div>
+
+    <nav class="nav">
+        <a href="index.html">Башкы бет</a>
+        <a href="lessons.html">Сабактар</a>
+        <a href="games.html">Оюндар</a>
+        <a href="tests.html">Тесттер</a>
+        <a href="dictionary.html">Сөздүк</a>
+    </nav>
+</header>
+
+
+<main class="lesson-page">
+
+    <!-- Сабактын башы -->
+    <section class="lesson-hero">
+
+        <div class="lesson-number">
+            4-САБАК
+        </div>
+
+        <h1>🏠 Үй жана күнүмдүк жашоо</h1>
+
+        <p>
+            Үйдөгү буюмдарды жана күнүмдүк жашоодо колдонулган сөздөрдү үйрөнөбүз.
+        </p>
+
+    </section>
+
+
+    <!-- Прогресс -->
+    <section class="lesson-progress">
+
+        <div class="progress-info">
+            <span>Сабактын жүрүшү</span>
+            <span id="progressText">1 / 4</span>
+        </div>
+
+        <div class="progress-bar">
+            <div id="progressFill"></div>
+        </div>
+
+    </section>
+
+
+    <!-- 1-КАДАМ -->
+    <section class="lesson-step active" id="step1">
+
+        <div class="step-title">
+            <span>📚</span>
+            <h2>1. Үйдөгү негизги сөздөр</h2>
+        </div>
+
+        <p>
+            Төмөнкү сөздөрдү окуп, маанисин эстеп кал.
+        </p>
+
+
+        <div class="word-grid">
+
+            <div class="word-card">
+                <div class="word-icon">🏠</div>
+                <h3>Үй</h3>
+                <p>Адам жашаган жай</p>
+            </div>
+
+            <div class="word-card">
+                <div class="word-icon">🚪</div>
+                <h3>Эшик</h3>
+                <p>Үйгө кирип-чыгуучу жер</p>
+            </div>
+
+            <div class="word-card">
+                <div class="word-icon">🪟</div>
+                <h3>Терезе</h3>
+                <p>Жарык кирүүчү бөлүк</p>
+            </div>
+
+            <div class="word-card">
+                <div class="word-icon">🪑</div>
+                <h3>Отургуч</h3>
+                <p>Отуруу үчүн колдонулат</p>
+            </div>
+
+            <div class="word-card">
+                <div class="word-icon">🛏️</div>
+                <h3>Керебет</h3>
+                <p>Уктоо үчүн колдонулат</p>
+            </div>
+
+            <div class="word-card">
+                <div class="word-icon">🧹</div>
+                <h3>Шыпыргы</h3>
+                <p>Тазалоо үчүн колдонулат</p>
+            </div>
+
+        </div>
+
+
+        <button class="lesson-button" onclick="nextStep()">
+            Кийинки →
+        </button>
+
+    </section>
+
+
+    <!-- 2-КАДАМ -->
+    <section class="lesson-step" id="step2">
+
+        <div class="step-title">
+            <span>💬</span>
+            <h2>2. Сүйлөмдөрдү үйрөнөлү</h2>
+        </div>
+
+        <p>
+            Үй тууралуу жөнөкөй сүйлөмдөрдү окуп көр.
+        </p>
+
+
+        <div class="sentence-list">
+
+            <div class="sentence-card">
+                🏠 <strong>Бул менин үйүм.</strong>
+            </div>
+
+            <div class="sentence-card">
+                🚪 <strong>Эшик ачык.</strong>
+            </div>
+
+            <div class="sentence-card">
+                🪟 <strong>Терезе чоң.</strong>
+            </div>
+
+            <div class="sentence-card">
+                🪑 <strong>Отургуч бөлмөдө турат.</strong>
+            </div>
+
+            <div class="sentence-card">
+                🛏️ <strong>Мен керебетте уктайм.</strong>
+            </div>
+
+            <div class="sentence-card">
+                🧹 <strong>Мен үйдү тазалайм.</strong>
+            </div>
+
+        </div>
+
+
+        <div class="example-dialogue">
+
+            <h3>🗣️ Кыска сүйлөшүү</h3>
+
+            <p>
+                <strong>— Бул эмне?</strong>
+            </p>
+
+            <p>
+                — Бул терезе.
+            </p>
+
+            <p>
+                <strong>— Терезе кандай?</strong>
+            </p>
+
+            <p>
+                — Терезе чоң.
+            </p>
+
+        </div>
+
+
+        <button class="lesson-button" onclick="nextStep()">
+            Кийинки →
+        </button>
+
+    </section>
+
+
+    <!-- 3-КАДАМ -->
+    <section class="lesson-step" id="step3">
+
+        <div class="step-title">
+            <span>📝</span>
+            <h2>3. Өзүңдү текшер</h2>
+        </div>
+
+        <p>
+            Туура жоопту танда.
+        </p>
+
+
+        <div id="quizContainer">
+
+            <!-- Суроо JavaScript аркылуу чыгат -->
+
+        </div>
+
+
+        <div id="quizResult"></div>
+
+
+        <button
+            id="nextQuestionButton"
+            class="lesson-button"
+            onclick="nextQuestion()"
+            style="display:none;">
+
+            Кийинки суроо →
+
+        </button>
+
+    </section>
+
+
+    <!-- 4-КАДАМ -->
+    <section class="lesson-step" id="step4">
+
+        <div class="result-box">
+
+            <div class="result-icon">
+                🎉
+            </div>
+
+            <h2>Сабак аяктады!</h2>
+
+            <p>
+                Сен «Үй жана күнүмдүк жашоо» темасын өттүң.
+            </p>
+
+
+            <div class="lesson-score">
+
+                <div>
+                    <span>⭐</span>
+                    <strong id="finalScore">0</strong>
+                    <small>упай</small>
+                </div>
+
+                <div>
+                    <span>✅</span>
+                    <strong id="correctAnswers">0</strong>
+                    <small>туура жооп</small>
+                </div>
+
+            </div>
+
+
+            <div class="result-message" id="resultMessage">
+                Жакшы иштедиң! 👏
+            </div>
+
+
+            <div class="result-buttons">
+
+                <button
+                    class="lesson-button"
+                    onclick="location.href='lessons.html'">
+
+                    📚 Сабактарга кайтуу
+
+                </button>
+
+
+                <button
+                    class="lesson-button secondary"
+                    onclick="restartLesson()">
+
+                    🔄 Кайра өтүү
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="js/firebase-config.js"></script>
+<script src="js/app.js"></script>
+<script src="js/lesson4.js"></script>
+
+</body>
+</html>

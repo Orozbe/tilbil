@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сабактар — TilBil</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container header-content">
+
+        <a href="index.html" class="logo">
+            🇰🇬 <span>TilBil</span>
+        </a>
+
+        <nav class="navigation">
+            <a href="lessons.html" class="active">📖 Сабактар</a>
+            <a href="games.html">🎮 Оюндар</a>
+            <a href="tests.html">📝 Тесттер</a>
+            <a href="listening.html">🔊 Угуу</a>
+            <a href="dictionary.html">📕 Сөздүк</a>
+            <a href="student.html">👤 Кабинет</a>
+        </nav>
+
+        <button class="login-btn" onclick="go('student.html')">
+            Кирүү
+        </button>
+
+    </div>
+</header>
+
+
+<main>
+
+    <!-- Башкы бөлүк -->
+    <section class="page-hero">
+        <div class="container">
+
+            <div class="hero-content">
+                <span class="hero-label">📖 Кыргыз тили</span>
+
+                <h1>Сабактар</h1>
+
+                <p>
+                    Кыргыз тилин кадам сайын үйрөн.
+                    Жөнөкөй сабактардан баштап,
+                    сүйлөм түзүүгө жана грамматикага чейин үйрөнөбүз.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Прогресс -->
+    <section class="section">
+        <div class="container">
+
+            <div class="level-block">
+
+                <div class="level-header">
+                    <div>
+                        <span class="level-number">01-деңгээл</span>
+                        <h2>Башталгыч деңгээл</h2>
+                    </div>
+
+                    <div class="level-progress">
+                        <strong>0 / 10</strong>
+                        <span>сабак</span>
+                    </div>
+                </div>
+
+
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 0%;"></div>
+                </div>
+
+
+                <div class="lesson-grid">
+
+                    <!-- Сабак 1 -->
+                    <div class="lesson-card">
+
+                        <div class="lesson-icon">
+                            🔤
+                        </div>
+
+                        <div class="lesson-info">
+                            <span class="lesson-number">
+                                1-сабак
+                            </span>
+
+                            <h3>Тамгалар жана тыбыштар</h3>
+
+                            <p>
+                                Кыргыз тилиндеги тамгалар,
+                                үндүү жана үнсүз тыбыштар менен тааныш.
+                            </p>
+                        </div>
+
+                        <button
+    class="lesson-button"
+    onclick="location.href='lesson1.html'">
+    Баштоо →
+</button>
+
+                    </div>
+
+
+                    <!-- Сабак 2 -->
+                    <div class="lesson-card">
+
+                        <div class="lesson-icon">
+                            👋
+                        </div>
+
+                        <div class="lesson-info">
+                            <span class="lesson-number">
+                                2-сабак
+                            </span>
+
+                            <h3>Саламдашуу</h3>
+
+                            <p>
+                                Күнүмдүк жашоодо колдонулган
+                                саламдашуу жана таанышуу сөздөрүн үйрөн.
+                            </p>
+                        </div>
+
+                        <button
+                            class="lesson-button"
+                            onclick="startLesson('lesson2.html')">
+                            Баштоо →
+                        </button>
+
+                    </div>
+
+
+                    <!-- Сабак 3 -->
+                    <div class="lesson-card">
+
+    <h3>👨‍👩‍👧 Үй-бүлө</h3>
+
+    <p>
+        Үй-бүлө мүчөлөрүнүн аттарын үйрөнөбүз.
+    </p>
+
+    <button
+        class="lesson-button"
+        onclick="location.href='lesson3.html'">
+        Баштоо →
+    </button>
+
+</div>
+
+
+                    <!-- Сабак 4 -->
+                    <div class="lesson-card">
+
+                        <div class="lesson-icon">
+                            🏠
+                        </div>
+
+                        <div class="lesson-info">
+                            <span class="lesson-number">
+                                4-сабак
+                            </span>
+
+                            <h3>Үй жана күнүмдүк жашоо</h3>
+
+                            <p>
+                                Үйдөгү буюмдардын жана күнүмдүк
+                                иштердин аталыштарын үйрөн.
+                            </p>
+                        </div>
+
+                        <button
+                            class="lesson-button"
+                            onclick="startLesson('daily-life.html')">
+                            Баштоо →
+                        </button>
+
+                    </div>
+
+
+                    <!-- Сабак 5 -->
+                    <div class="lesson-card">
+
+                        <div class="lesson-icon">
+                            🍎
+                        </div>
+
+                        <div class="lesson-info">
+                            <span class="lesson-number">
+                                5-сабак
+                            </span>
+
+                            <h3>Тамак-аш</h3>
+
+                            <p>
+                                Тамак-аштардын аталыштарын,
+                                даамдарды жана күнүмдүк сөздөрдү үйрөн.
+                            </p>
+                        </div>
+
+                        <button
+                            class="lesson-button"
+                            onclick="startLesson('food.html')">
+                            Баштоо →
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- 2-деңгээл -->
+    <section class="section">
+        <div class="container">
+
+            <div class="level-block">
+
+                <div class="level-header">
+
+                    <div>
+                        <span class="level-number">02-деңгээл</span>
+
+                        <h2>Орто деңгээл</h2>
+                    </div>
+
+                    <div class="level-progress">
+                        <strong>0 / 10</strong>
+                        <span>сабак</span>
+                    </div>
+
+                </div>
+
+
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 0%;"></div>
+                </div>
+
+
+                <div class="lesson-grid">
+
+                    <div class="lesson-card locked">
+
+                        <div class="lesson-icon">
+                            🕐
+                        </div>
+
+                        <div class="lesson-info">
+
+                            <span class="lesson-number">
+                                6-сабак
+                            </span>
+
+                            <h3>Убакыт жана күндөр</h3>
+
+                            <p>
+                                Аптанын күндөрү, айлар жана убакыт
+                                жөнүндө сүйлөөнү үйрөн.
+                            </p>
+
+                        </div>
+
+                        <button
+                            class="lesson-button"
+                            onclick="lockedLesson()">
+                            🔒 Кулпуланган
+                        </button>
+
+                    </div>
+
+
+                    <div class="lesson-card locked">
+
+                        <div class="lesson-icon">
+                            🌳
+                        </div>
+
+                        <div class="lesson-info">
+
+                            <span class="lesson-number">
+                                7-сабак
+                            </span>
+
+                            <h3>Жаратылыш</h3>
+
+                            <p>
+                                Табият, жаныбарлар, өсүмдүктөр
+                                жана айлана-чөйрө боюнча сөздөр.
+                            </p>
+
+                        </div>
+
+                        <button
+                            class="lesson-button"
+                            onclick="lockedLesson()">
+                            🔒 Кулпуланган
+                        </button>
+
+                    </div>
+
+
+                    <div class="lesson-card locked">
+
+                        <div class="lesson-icon">
+                            💬
+                        </div>
+
+                        <div class="lesson-info">
+
+                            <span class="lesson-number">
+                                8-сабак
+                            </span>
+
+                            <h3>Сүйлөм түзүү</h3>
+
+                            <p>
+                                Сөздөрдү туура иретке келтирип,
+                                жөнөкөй сүйлөмдөрдү түзүүнү үйрөн.
+                            </p>
+
+                        </div>
+
+                        <button
+                            class="lesson-button"
+                            onclick="lockedLesson()">
+                            🔒 Кулпуланган
+                        </button>
+
+                    </div>
+
+
+                    <div class="lesson-card locked">
+
+                        <div class="lesson-icon">
+                            ✍️
+                        </div>
+
+                        <div class="lesson-info">
+
+                            <span class="lesson-number">
+                                9-сабак
+                            </span>
+
+                            <h3>Грамматика</h3>
+
+                            <p>
+                                Кыргыз тилинин негизги грамматикалык
+                                эрежелери менен тааныш.
+                            </p>
+
+                        </div>
+
+                        <button
+                            class="lesson-button"
+                            onclick="lockedLesson()">
+                            🔒 Кулпуланган
+                        </button>
+
+                    </div>
+
+
+                    <div class="lesson-card locked">
+
+                        <div class="lesson-icon">
+                            📚
+                        </div>
+
+                        <div class="lesson-info">
+
+                            <span class="lesson-number">
+                                10-сабак
+                            </span>
+
+                            <h3>Сөз байлыгы</h3>
+
+                            <p>
+                                Жаңы сөздөрдү үйрөнүп,
+                                сөз байлыгыңды көбөйт.
+                            </p>
+
+                        </div>
+
+                        <button
+                            class="lesson-button"
+                            onclick="lockedLesson()">
+                            🔒 Кулпуланган
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- 3-деңгээл -->
+    <section class="section">
+        <div class="container">
+
+            <div class="level-block">
+
+                <div class="level-header">
+
+                    <div>
+                        <span class="level-number">03-деңгээл</span>
+
+                        <h2>Жогорку деңгээл</h2>
+                    </div>
+
+                    <div class="level-progress">
+                        <strong>0 / 10</strong>
+                        <span>сабак</span>
+                    </div>
+
+                </div>
+
+
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 0%;"></div>
+                </div>
+
+
+                <div class="lesson-grid">
+
+                    <div class="lesson-card locked">
+
+                        <div class="lesson-icon">
+                            📝
+                        </div>
+
+                        <div class="lesson-info">
+                            <span class="lesson-number">
+                                11-сабак
+                            </span>
+
+                            <h3>Текст менен иштөө</h3>
+
+                            <p>
+                                Текстти окуу, түшүнүү жана
+                                негизги оюн аныктоону үйрөн.
+                            </p>
+                        </div>
+
+                        <button
+                            class="lesson-button"
+                            onclick="lockedLesson()">
+                            🔒 Кулпуланган
+                        </button>
+
+                    </div>
+
+
+                    <div class="lesson-card locked">
+
+                        <div class="lesson-icon">
+                            🗣️
+                        </div>
+
+                        <div class="lesson-info">
+                            <span class="lesson-number">
+                                12-сабак
+                            </span>
+
+                            <h3>Сүйлөшүү</h3>
+
+                            <p>
+                                Ар кандай кырдаалда кыргызча
+                                сүйлөшүүнү машык.
+                            </p>
+                        </div>
+
+                        <button
+                            class="lesson-button"
+                            onclick="lockedLesson()">
+                            🔒 Кулпуланган
+                        </button>
+
+                    </div>
+
+
+                    <div class="lesson-card locked">
+
+                        <div class="lesson-icon">
+                            🎯
+                        </div>
+
+                        <div class="lesson-info">
+                            <span class="lesson-number">
+                                13-сабак
+                            </span>
+
+                            <h3>Туура жазуу</h3>
+
+                            <p>
+                                Сөздөрдү жана сүйлөмдөрдү
+                                туура жазууну үйрөн.
+                            </p>
+                        </div>
+
+                        <button
+                            class="lesson-button"
+                            onclick="lockedLesson()">
+                            🔒 Кулпуланган
+                        </button>
+
+                    </div>
+
+
+                    <div class="lesson-card locked">
+
+                        <div class="lesson-icon">
+                            🧠
+                        </div>
+
+                        <div class="lesson-info">
+                            <span class="lesson-number">
+                                14-сабак
+                            </span>
+
+                            <h3>Татаал сүйлөмдөр</h3>
+
+                            <p>
+                                Татаал сүйлөмдөрдү түшүнүп,
+                                туура түзүүнү үйрөн.
+                            </p>
+                        </div>
+
+                        <button
+                            class="lesson-button"
+                            onclick="lockedLesson()">
+                            🔒 Кулпуланган
+                        </button>
+
+                    </div>
+
+
+                    <div class="lesson-card locked">
+
+                        <div class="lesson-icon">
+                            🏆
+                        </div>
+
+                        <div class="lesson-info">
+                            <span class="lesson-number">
+                                15-сабак
+                            </span>
+
+                            <h3>Жыйынтык сабак</h3>
+
+                            <p>
+                                Үйрөнгөн билимиңди текшерип,
+                                кийинки деңгээлге өт.
+                            </p>
+                        </div>
+
+                        <button
+                            class="lesson-button"
+                            onclick="lockedLesson()">
+                            🔒 Кулпуланган
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="container">
+
+        <p>
+            🇰🇬 <strong>TilBil</strong> —
+            Кыргыз тилин кызыктуу үйрөн!
+        </p>
+
+        <p>
+            © 2026 TilBil. Бардык укуктар корголгон.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="js/firebase-config.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

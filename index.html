@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TilBil — Кыргыз тилин үйрөнүү платформасы</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- ==========================================
+     HEADER
+========================================== -->
+
+<header class="header">
+
+    <div class="logo">
+        🇰🇬 TilBil
+    </div>
+
+    <nav class="nav">
+
+        <a href="index.html" class="active">
+            🏠 Башкы бет
+        </a>
+
+        <a href="lesson.html" class="active">
+            📖 Сабактар
+        </a>
+
+        <a href="game.html" class="active">
+            🎮 Оюндар
+        </a>
+
+        <a href="test.html" class="active">
+            📝 Тесттер
+        </a>
+
+        <a href="listening.html" class="active">
+            🔊 Угуу
+        </a>
+
+        <a href="dictionary.html" class="active">
+            📕 Сөздүк
+        </a>
+
+        <a href="student.html" class="active">
+            👤 Кабинет
+        </a>
+
+    </nav>
+
+</header>
+
+
+<!-- ==========================================
+     MAIN
+========================================== -->
+
+<main class="container">
+
+
+    <!-- ======================================
+         HERO
+    ======================================= -->
+
+    <section class="hero-section">
+
+        <div class="hero-content">
+
+            <div class="hero-icon">
+                🇰🇬
+            </div>
+
+            <h1>
+                TilBil
+            </h1>
+
+            <h2>
+                Кыргыз тилин кызыктуу үйрөн!
+            </h2>
+
+            <p>
+                Сабак оку, оюн ойно, тест тапшыр,
+                угуп үйрөн жана жаңы сөздөрдү өздөштүр.
+            </p>
+
+            <button
+                class="primary-button"
+                onclick="go('lessons.html')">
+
+                📚 Сабак баштоо
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ======================================
+         ОКУУЧУНУН СТАТИСТИКАСЫ
+    ======================================= -->
+
+    <section class="lesson-card">
+
+        <h2>📊 Менин жетишкендиктерим</h2>
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    🔥
+                </div>
+
+                <h3>
+                    <span id="streakCount">
+                        7
+                    </span>
+                </h3>
+
+                <p>
+                    күндүк серия
+                </p>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    ⭐
+                </div>
+
+                <h3>
+                    <span id="totalScore">
+                        0
+                    </span>
+                </h3>
+
+                <p>
+                    жалпы упай
+                </p>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    🏆
+                </div>
+
+                <h3>
+                    <span id="userLevel">
+                        1
+                    </span>
+                </h3>
+
+                <p>
+                    деңгээл
+                </p>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    📚
+                </div>
+
+                <h3>
+                    <span id="completedLessons">
+                        0
+                    </span>
+                </h3>
+
+                <p>
+                    бүткөн сабак
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ======================================
+         КҮНҮНҮН ТАПШЫРМАСЫ
+    ======================================= -->
+
+    <section class="lesson-card daily-task">
+
+        <h2>
+            🎯 Бүгүнкү тапшырма
+        </h2>
+
+        <p>
+            Кыргыз тили боюнча бүгүнкү кичинекей
+            тапшырмаңды аткар.
+        </p>
+
+        <div class="daily-task-box">
+
+            <h3>
+                🧠 5 жаңы сөз үйрөн
+            </h3>
+
+            <p>
+                Сөздүккө кирип, жаңы сөздөрдүн
+                маанисин жана мисалдарын оку.
+            </p>
+
+            <button onclick="go('dictionary.html')">
+                📕 Сөздүккө өтүү
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ======================================
+         НЕГИЗГИ БӨЛҮМДӨР
+    ======================================= -->
+
+    <section>
+
+        <h2 class="section-title">
+            🚀 Үйрөнүүнү улант
+        </h2>
+
+
+        <div class="menu-grid">
+
+
+            <!-- САБАКТАР -->
+
+            <div class="menu-card">
+
+                <div class="menu-icon">
+                    📖
+                </div>
+
+                <h2>
+                    Сабактар
+                </h2>
+
+                <p>
+                    Кыргыз тили боюнча
+                    кызыктуу сабактарды оку.
+                </p>
+
+                <button onclick="go('lessons.html')">
+                    Баштоо →
+                </button>
+
+            </div>
+
+
+            <!-- ОЮНДАР -->
+
+            <div class="menu-card">
+
+                <div class="menu-icon">
+                    🎮
+                </div>
+
+                <h2>
+                    Оюндар
+                </h2>
+
+                <p>
+                    Оюн аркылуу сөздөрдү
+                    жана тилди үйрөн.
+                </p>
+
+                <button onclick="go('games.html')">
+                    Ойноо →
+                </button>
+
+            </div>
+
+
+            <!-- ТЕСТТЕР -->
+
+            <div class="menu-card">
+
+                <div class="menu-icon">
+                    📝
+                </div>
+
+                <h2>
+                    Тесттер
+                </h2>
+
+                <p>
+                    Билимиңди текшерип,
+                    упай топто.
+                </p>
+
+                <button onclick="go('tests.html')">
+                    Тест тапшыруу →
+                </button>
+
+            </div>
+
+
+            <!-- УГУУ -->
+
+            <div class="menu-card">
+
+                <div class="menu-icon">
+                    🔊
+                </div>
+
+                <h2>
+                    Угуу
+                </h2>
+
+                <p>
+                    Кыргызча сөздөрдү жана
+                    сүйлөмдөрдү угуп үйрөн.
+                </p>
+
+                <button onclick="go('listening.html')">
+                    Угууну баштоо →
+                </button>
+
+            </div>
+
+
+            <!-- СӨЗДҮК -->
+
+            <div class="menu-card">
+
+                <div class="menu-icon">
+                    📕
+                </div>
+
+                <h2>
+                    Сөздүк
+                </h2>
+
+                <p>
+                    Жаңы сөздөрдү издеп,
+                    маанисин үйрөн.
+                </p>
+
+                <button onclick="go('dictionary.html')">
+                    Сөз издөө →
+                </button>
+
+            </div>
+
+
+            <!-- КАБИНЕТ -->
+
+            <div class="menu-card">
+
+                <div class="menu-icon">
+                    👤
+                </div>
+
+                <h2>
+                    Жеке кабинет
+                </h2>
+
+                <p>
+                    Упайларыңды, деңгээлиңди
+                    жана жетишкендиктериңди көр.
+                </p>
+
+                <button onclick="go('student.html')">
+                    Кабинет →
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ======================================
+         ДЕҢГЭЭЛ
+    ======================================= -->
+
+    <section class="lesson-card">
+
+        <h2>
+            🏆 Менин деңгээлим
+        </h2>
+
+        <div class="level-box">
+
+            <div class="level-info">
+
+                <strong>
+                    Деңгээл <span id="levelNumber">1</span>
+                </strong>
+
+                <span>
+                    <span id="levelProgressScore">0</span>
+                    / 100 упай
+                </span>
+
+            </div>
+
+
+            <div class="progress-bar">
+
+                <div
+                    id="levelProgress"
+                    class="progress"
+                    style="width: 0%;">
+                </div>
+
+            </div>
+
+
+            <p id="levelMessage">
+                Кийинки деңгээлге жетүү үчүн
+                упай топто!
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ======================================
+         КҮНДҮК МОТИВАЦИЯ
+    ======================================= -->
+
+    <section class="hero-section motivation-section">
+
+        <h2>
+            💪 Ар күн сайын бир аздан үйрөн!
+        </h2>
+
+        <p>
+            Бүгүн үйрөнгөн бир сөз —
+            эртеңки билимиңдин дагы бир бөлүгү.
+        </p>
+
+        <button onclick="go('lessons.html')">
+            🚀 Улантуу
+        </button>
+
+    </section>
+
+</main>
+
+
+<!-- ==========================================
+     FOOTER
+========================================== -->
+
+<footer class="footer">
+
+    <p>
+        🇰🇬 TilBil — Кыргыз тилин үйрөнүү платформасы
+    </p>
+
+    <p>
+        Кыргыз тилин үйрөнүү кызыктуу!
+    </p>
+
+</footer>
+
+
+<!-- JAVASCRIPT -->
+<script src="js/firebase-config.js"></script>
+<script src="js/app.js"></script>
+
+
+
+<script>
+
+    // ==========================================
+    // БАШКЫ БЕТТИН СТАТИСТИКАСЫ
+    // ==========================================
+
+    document.addEventListener(
+        "DOMContentLoaded",
+        function () {
+
+            // Жалпы упай
+            const totalScore =
+                Number(
+                    localStorage.getItem(
+                        "tilbil_total_score"
+                    )
+                ) || 0;
+
+
+            document.getElementById(
+                "totalScore"
+            ).textContent = totalScore;
+
+
+            // Деңгээл
+            const level =
+                Math.floor(totalScore / 100) + 1;
+
+
+            document.getElementById(
+                "userLevel"
+            ).textContent = level;
+
+
+            document.getElementById(
+                "levelNumber"
+            ).textContent = level;
+
+
+            // Учурдагы деңгээлдеги упай
+            const currentLevelScore =
+                totalScore % 100;
+
+
+            document.getElementById(
+                "levelProgressScore"
+            ).textContent = currentLevelScore;
+
+
+            document.getElementById(
+                "levelProgress"
+            ).style.width =
+                currentLevelScore + "%";
+
+
+            // Бүткөн сабактар
+            let completedLessons = 0;
+
+
+            for (let i = 1; i <= 5; i++) {
+
+                if (
+                    localStorage.getItem(
+                        `tilbil_lesson${i}_completed`
+                    ) === "true"
+                ) {
+
+                    completedLessons++;
+
+                }
+
+            }
+
+
+            document.getElementById(
+                "completedLessons"
+            ).textContent =
+                completedLessons;
+
+
+            // Серия
+            const streak =
+                Number(
+                    localStorage.getItem(
+                        "tilbil_streak"
+                    )
+                ) || 7;
+
+
+            document.getElementById(
+                "streakCount"
+            ).textContent =
+                streak;
+
+
+            // Деңгээл боюнча билдирүү
+            const levelMessage =
+                document.getElementById(
+                    "levelMessage"
+                );
+
+
+            if (currentLevelScore >= 80) {
+
+                levelMessage.textContent =
+                    "🔥 Кийинки деңгээлге аз калды!";
+
+            }
+
+            else if (currentLevelScore >= 50) {
+
+                levelMessage.textContent =
+                    "💪 Жакшы бара жатасың! Уланта бер.";
+
+            }
+
+            else if (currentLevelScore > 0) {
+
+                levelMessage.textContent =
+                    "⭐ Азамат! Упай топтоону улант.";
+
+            }
+
+            else {
+
+                levelMessage.textContent =
+                    "🚀 Биринчи упайыңды топтоого убакыт келди!";
+
+            }
+
+        }
+    );
+
+</script>
+
+</body>
+</html>

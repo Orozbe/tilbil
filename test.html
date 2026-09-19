@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тесттер — TilBil</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>🇰🇬 TilBil</h1>
+
+    <nav>
+        <button onclick="go('index.html')">Башкы бет</button>
+        <button onclick="go('lessons.html')">📖 Сабактар</button>
+        <button onclick="go('games.html')">🎮 Оюндар</button>
+        <button onclick="go('tests.html')">📝 Тесттер</button>
+        <button onclick="go('listening.html')">🔊 Угуу</button>
+        <button onclick="go('dictionary.html')">📕 Сөздүк</button>
+    </nav>
+
+</header>
+
+
+<main>
+
+    <!-- БАШТАЛГЫЧ БӨЛҮК -->
+
+    <section id="testStart">
+
+        <h2>📝 Кыргыз тили боюнча тест</h2>
+
+        <p>
+            Билимиңди текшерип көр!
+        </p>
+
+        <p>
+            Тестте 10 суроо бар.
+            Ар бир туура жооп үчүн 10 упай берилет.
+        </p>
+
+        <button onclick="startTest()">
+            🚀 Тестти баштоо
+        </button>
+
+    </section>
+
+
+    <!-- ТЕСТ -->
+
+    <section id="testArea" style="display: none;">
+
+        <div>
+            <strong>
+                Суроо:
+                <span id="questionNumber">1</span> / 10
+            </strong>
+        </div>
+
+        <div>
+            ⭐ Упай:
+            <span id="testScore">0</span>
+        </div>
+
+
+        <!-- ПРОГРЕСС -->
+
+        <div>
+            <div id="testProgress"></div>
+        </div>
+
+
+        <!-- СУРОО -->
+
+        <div id="questionBox">
+
+            <h2 id="questionText">
+                Суроо
+            </h2>
+
+        </div>
+
+
+        <!-- ЖООПТОР -->
+
+        <div id="answers">
+
+        </div>
+
+
+        <!-- КИЙИНКИ -->
+
+        <button
+            id="nextTestButton"
+            onclick="nextTestQuestion()"
+            style="display: none;">
+
+            Кийинки ➡️
+
+        </button>
+
+    </section>
+
+
+    <!-- ЖЫЙЫНТЫК -->
+
+    <section id="testResult" style="display: none;">
+
+        <h2>🎉 Тест аяктады!</h2>
+
+        <p>
+            Сенин жыйынтык упайың:
+        </p>
+
+        <h1>
+            ⭐ <span id="finalScore">0</span> / 100
+        </h1>
+
+        <p>
+            Туура жооптор:
+            <strong>
+                <span id="correctCount">0</span> / 10
+            </strong>
+        </p>
+
+
+        <div id="resultMessage"></div>
+
+
+        <button onclick="restartTest()">
+            🔄 Кайра тапшыруу
+        </button>
+
+        <button onclick="go('index.html')">
+            🏠 Башкы бет
+        </button>
+
+    </section>
+
+</main>
+
+
+<script src="js/firebase-config.js"></script>
+<script src="js/app.js"></script>
+<script src="js/tests.js"></script>
+
+</body>
+</html>
